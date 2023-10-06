@@ -1,3 +1,5 @@
 myEnv
 .rest
 .env
+.txt
+__pycache__
