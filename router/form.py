@@ -17,6 +17,7 @@ def form():
             return jsonify({
                 "energy_usage": energy_usage
             })
+            
         else:
             return jsonify({
                 "error": "Incomplete data. Please provide the location, device, and device_type."

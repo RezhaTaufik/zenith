@@ -1,0 +1,31 @@
+/check-connection
+
+/devices
+- args: "location"
+- this route will call the retrieve_devices_by_location() function
+and then will return the json
+
+{
+    "devices":"data"
+}
+
+/form
+
+- req body: {
+    "location":"data",
+    "device":"data",
+    "device_type":"data"
+}
+
+- this route will call the calculate_energy_usage() function
+- this route will return the json
+{
+    "energy_usage":"data"
+}
+
+/predict
+request payload: image from data-form
+
+
+
+
