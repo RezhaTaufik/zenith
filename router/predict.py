@@ -57,7 +57,7 @@ def predict():
         predicted_class_index = np.argmax(predictions[0])
         predicted_class = class_labels[predicted_class_index]
         confidence = predictions[0][predicted_class_index] * 100
-        result = "This image most likely belongs to {} with a {:.2f} percent confidence.".format(predicted_class, confidence)
+        result = "Gambar ini merupakan sebuah {} dengan {:.2f} persentase kepastian.".format(predicted_class, confidence)
 
         # Get the current time
         current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -114,5 +114,5 @@ def get_recommendations(predicted_class):
     elif predicted_class == 'Lamp':
         return "E17"
     else:
-        return "No recommendations at this time"
+        return "Tidak ada rekomendasi untuk saat ini"
 

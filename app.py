@@ -17,7 +17,7 @@ app.config['MYSQL_HOST'] = str(os.getenv("DB_HOST"))
 app.config['MYSQL_USER'] = str(os.getenv("DB_USER"))
 app.config['MYSQL_PASSWORD'] = str(os.getenv("DB_PASS"))
 app.config['MYSQL_DB'] = str(os.getenv("DB_NAME"))
-app.config['MYSQL_PORT'] = int(os.getenv("DB_PORT"))
+app.config['MYSQL_PORT'] = 3306
 
 mysql = MySQL(app)
 
